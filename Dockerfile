@@ -35,7 +35,7 @@ RUN pecl channel-update pecl.php.net; \
     pecl install xdebug-2.7.2; \
     pecl install redis; \
     docker-php-ext-enable xdebug \
-    docker-php-ext-enable redis
+    redis
 
 RUN docker-php-ext-install sockets
 
