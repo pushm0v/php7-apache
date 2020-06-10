@@ -92,5 +92,8 @@ RUN { \
         echo '</VirtualHost>'; \
     } > /etc/apache2/sites-enabled/000-default.conf
 
+# install composer
+COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
+
 EXPOSE 80
 
